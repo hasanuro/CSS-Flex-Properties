@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box css</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container {
+            width: 1000px;
+            height: 700px;
+            border: 8px dashed rgb(0, 0, 0);
+            margin-left: 250px;
+
+            /* To use the Fkec properties, first writhe the following command unless nothing can work  */
+            display: flex;
+
+           /* Property # 1: Flex-> Direction */
+           /* flex-direction: row; */
+           /* flex-direction: row-reverse; */
+           /* flex-direction: column; */
+           /* flex-direction: column-reverse; */
+
+           /* Property # 2: Flex-> Wrap */
+            /* flex-wrap:nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* Property # 3: Flex-> Flow */
+            /* flex-flow: column wrap-reverse; */
+
+            /* Property # 4: Justify-Content */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* Property # 5: Align-Item */
+            /* align-items: stretch; */
+            /* align-items: flex-start;  */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+
+            /* Property # 6: Align-Content */
+            /* align-content: flex-end; */
+
+
+
+        }
+
+        .box1 {
+            background-color: rgb(226, 20, 192);
+            width: 100px;
+            height: 50px;
+            font-size: 50px;
+            align-self: flex-end;
+            flex-grow: 0.5;
+
+
+            /* For Flex-Shrink uncomment the following code & uncomment the justicfy_comtent: evenly */
+            /* width: 200px;
+            height: 300px; */
+
+           /* For Flex-Basis uncomment the following code & uncomment the flex-direction: row or flex-direction: column */
+          /* width: 200px; */
+          /* height: 300px; */
+          /* flex-basis: auto; */
+
+
+        }
+
+        .box2 {
+            background-color: rgb(113, 231, 35);
+            width: 130px;
+            height: 80px;
+            font-size: 60px;
+            flex-grow: 0.8;
+            order: 4;
+
+
+            /* For Flex-Shrink uncomment the following code & uncomment the justicfy_comtent: evenly */
+            /* width: 200px;
+            height: 300px;
+            flex-shrink: 20; */
+        }
+
+        .box3 {
+            background-color: rgb(236, 145, 17);
+            width: 160px;
+            height: 110px;
+            align-self: flex-end;
+            order: -2;
+            flex-shrink: 10;
+
+
+            /* For Flex-Shrink uncomment the following code & uncomment the justicfy_comtent: evenly */
+            /* width: 200px;
+            height: 300px; */
+        }
+
+        .box4 {
+            background-color: rgb(92, 224, 236);
+            width: 190px;
+            height: 140px;
+            order: -8;
+            align-self: flex-start;
+            font-size: 30px;
+
+
+            /* For Flex-Shrink uncomment the following code & uncomment the justicfy_comtent: evenly */
+            /* width: 200px;
+            height: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4 box 4 box 4 box 4</div>
+    </div>
+</body>
+
+</html>
